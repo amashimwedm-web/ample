@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for social icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .shop-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; padding: 40px 0; }
+        .item { border: 1px solid #ddd; padding: 10px; border-radius: 10px; text-align: center; }
+        .item img { width: 100%; height: 200px; object-fit: cover; border-radius: 5px; }
+        .buy-btn { background: var(--accent); color: white; border: none; padding: 10px; width: 100%; cursor: pointer; margin-top: 10px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+        <header>
+        <div class="logo-box">
+    <img src="logo.png" alt="ABM Logo" width="100px" height="100px">
+</div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li><a href="Contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<div class="container">
+    <h1>Our Products</h1>
+    <div class="shop-grid">
+
+        <!-- Product 1 -->
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400" alt="Luxury Watch">
+            <h4>Luxury Watch</h4>
+            <p>$150</p>
+            <button class="buy-btn" onclick="buyProduct('Luxury Watch')">Buy Now</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400" alt="Sport Shoes">
+            <h4>Sport Shoes</h4>
+            <p>$90</p>
+            <button class="buy-btn" onclick="buyProduct('Sport Shoes')">Buy Now</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=400" alt="Fashion Jacket">
+            <h4>Fashion Jacket</h4>
+            <p>$120</p>
+            <button class="buy-btn" onclick="buyProduct('Fashion Jacket')">Buy Now</button>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400" alt="Headphones">
+            <h4>Wireless Headphones</h4>
+            <p>$85</p>
+            <button class="buy-btn" onclick="buyProduct('Wireless Headphones')">Buy Now</button>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="item">
+            <img src="https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg" alt="Leather Bag">
+            <h4>Leather Bag</h4>
+            <p>$110</p>
+            <button class="buy-btn" onclick="buyProduct('Leather Bag')">Buy Now</button>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="item">
+            <img src="https://images.pexels.com/photos/1532244/pexels-photo-1532244.jpeg" alt="Sunglasses">
+            <h4>Sunglasses</h4>
+            <p>$45</p>
+            <button class="buy-btn" onclick="buyProduct('Sunglasses')">Buy Now</button>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="item">
+            <img src="https://images.pexels.com/photos/341523/pexels-photo-341523.jpeg" alt="Smartphones">
+            <h4>Smartphones</h4>
+            <p>$350</p>
+            <button class="buy-btn" onclick="buyProduct('Smartphone')">Buy Now</button>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400" alt="Laptop">
+            <h4>Laptop</h4>
+            <p>$850</p>
+            <button class="buy-btn" onclick="buyProduct('Laptop')">Buy Now</button>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="item">
+            <img src="https://images.pexels.com/photos/965989/pexels-photo-965989.jpeg" alt="Perfume">
+            <h4>Luxury Perfume</h4>
+            <p>$60</p>
+            <button class="buy-btn" onclick="buyProduct('Luxury Perfume')">Buy Now</button>
+        </div>
+
+        <!-- Product 10 -->
+        <div class="item">
+            <img src="https://images.pexels.com/photos/4452528/pexels-photo-4452528.jpeg" alt="Leather Wallet">
+            <h4>Leather Wallet</h4>
+            <p>$40</p>
+            <button class="buy-btn" onclick="buyProduct('Leather Wallet')">Buy Now</button>
+        </div>
+        <!-- Product 11 -->
+<div class="item">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo8lC3YqCM70w26xDUEuDSzPedflKTgKn7Tg&s" alt="Backpack">
+    <h4>Travel Backpack</h4>
+    <p>$70</p>
+    <button class="buy-btn" onclick="buyProduct('Travel Backpack')">Buy Now</button>
+</div>
+
+<!-- Product 12 -->
+<div class="item">
+    <img src="https://images.pexels.com/photos/2229671/pexels-photo-2229671.jpeg" alt="Camera">
+    <h4>Digital Camera</h4>
+    <p>$420</p>
+    <button class="buy-btn" onclick="buyProduct('Digital Camera')">Buy Now</button>
+</div>
+
+<!-- Product 13 -->
+<div class="item">
+    <img src="https://img.freepik.com/free-psd/gamepad-game-controller-icon-isolated-3d-render-illustration_47987-6409.jpg?semt=ais_hybrid&w=740&q=80" alt="Gaming Console">
+    <h4>Gaming Console</h4>
+    <p>$300</p>
+    <button class="buy-btn" onclick="buyProduct('Gaming Console')">Buy Now</button>
+</div>
+
+<!-- Product 14 -->
+<div class="item">
+    <img src="https://www.datocms-assets.com/119921/1714133057-top-10-most-expensive-lottery-win-bikes-10.jpg?auto=format&w=740" alt="Bikes">
+    <h4>Luxury Bikes</h4>
+    <p>$2000</p>
+    <button class="buy-btn" onclick="buyProduct('Gaming Headset')">Buy Now</button>
+</div>
+
+<!-- Product 15 -->
+<div class="item">
+    <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=400" alt="Coffee Maker">
+    <h4>Coffee Maker</h4>
+    <p>$85</p>
+    <button class="buy-btn" onclick="buyProduct('Coffee Maker')">Buy Now</button>
+</div>
+
+<!-- Product 16 -->
+<div class="item">
+    <img src="https://images2.bonhams.com/image?src=Images/live/2025-07/31/H-40379-0-1.jpg&top=0.356666666666&bottom=0.758333333333&height=480&width=960" alt="Luxury Cars">
+    <h4>Luxury Cars</h4>
+    <p>$1300000</p>
+    <button class="buy-btn" onclick="buyProduct('Fitness Watch')">Buy Now</button>
+</div>
+
+<!-- Product 17 -->
+<div class="item">
+    <img src="https://res.cloudinary.com/hksqkdlah/image/upload/38481_can-high-endblenders-0055.jpg" alt="Blender">
+    <h4>Kitchen Blender</h4>
+    <p>$65</p>
+    <button class="buy-btn" onclick="buyProduct('Kitchen Blender')">Buy Now</button>
+</div>
+
+<!-- Product 18 -->
+<div class="item">
+    <img src="https://media.loaf.com/image/upload/c_crop,h_857,w_1200,x_0,y_43/f_auto/q_auto/c_fill,h_786,w_1100/website/images/original/575410-mixed-lamp-range-069-lighton-cropped.jpg" alt="Table Lamp">
+    <h4>Table Lamp</h4>
+    <p>$40</p>
+    <button class="buy-btn" onclick="buyProduct('Table Lamp')">Buy Now</button>
+</div>
+
+<!-- Product 19 -->
+<div class="item">
+    <img src="https://img.freepik.com/free-psd/modern-white-office-chair-with-chrome-accents_191095-80595.jpg?semt=ais_hybrid&w=740&q=80" alt="Office Chair">
+    <h4>Office Chair</h4>
+    <p>$180</p>
+    <button class="buy-btn" onclick="buyProduct('Office Chair')">Buy Now</button>
+</div>
+
+<!-- Product 20 -->
+<div class="item">
+    <img src="https://s3.amazonaws.com/images.gearjunkie.com/uploads/2024/06/GJ-BG-Portable-Bluetooth-Speakers-group-hero.jpg" alt="Bluetooth Speaker">
+    <h4>Bluetooth Speaker</h4>
+    <p>$95</p>
+    <button class="buy-btn" onclick="buyProduct('Bluetooth Speaker')">Buy Now</button>
+</div>
+<!-- Product 21 - Vegetables -->
+<div class="item">
+    <img src="https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1097,h_617/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/643188-gettyimages-153946385-ca1ccfaad9be44325afc434b305adc0d.jpg" alt="Vegetables">
+    <h4>Vegetables</h4>
+    <p>$3</p>
+    <button class="buy-btn" onclick="buyProduct('Fresh Carrots')">Buy Now</button>
+</div>
+
+<!-- Product 22 - Tomatoes -->
+<div class="item">
+    <img src="https://thumbs.dreamstime.com/b/highlights-color-book-hair-highlights-color-book-hair-illustration-balayage-ombre-dye-tint-hue-pigment-highlights-color-book-hair-402388457.jpg" alt="Hairing">
+    <h4>Hairing</h4>
+    <p>$2.5</p>
+    <button class="buy-btn" onclick="buyProduct('Tomatoes')">Buy Now</button>
+</div>
+
+<!-- Product 23 - Vitamin Pills -->
+<div class="item">
+    <img src="https://ichef.bbci.co.uk/images/ic/1200xn/p06pmg7q.jpg" alt="Vitamin Pills">
+    <h4>Vitamin Pills</h4>
+    <p>$15</p>
+    <button class="buy-btn" onclick="buyProduct('Vitamin Pills')">Buy Now</button>
+</div>
+
+<!-- Product 24 - Pharmacist Syrup -->
+<div class="item">
+    <img src="https://t3.ftcdn.net/jpg/00/74/44/28/360_F_74442850_C0PsTWPFlOfwcPA3AybYefXDBmnWVsWX.jpg" alt="Toys">
+    <h4>Toys</h4>
+    <p>$10</p>
+    <button class="buy-btn" onclick="buyProduct('Cough Syrup')">Buy Now</button>
+</div>
+
+<!-- Product 25 - Industrial Gloves -->
+<div class="item">
+    <img src="https://preview.redd.it/other-glove-collection-v0-gx2di6hkq6qc1.jpeg?auto=webp&s=f52544f054122a5bb68e01a4fc38cee7d350f2f6" alt="Gloves">
+    <h4>Gloves</h4>
+    <p>$8</p>
+    <button class="buy-btn" onclick="buyProduct('Industrial Gloves')">Buy Now</button>
+</div>
+
+<!-- Product 26 - Safety Helmet -->
+<div class="item">
+    <img src="https://thumbs.dreamstime.com/b/fireman-safety-helmets-collection-construction-sites-assorted-colors-white-background-image-showcases-collection-328941040.jpg" alt="Safety Helmet">
+    <h4>Safety Helmet</h4>
+    <p>$25</p>
+    <button class="buy-btn" onclick="buyProduct('Safety Helmet')">Buy Now</button>
+</div>
+
+<!-- Product 27 - Currency Exchange -->
+<div class="item">
+    <img src="https://www.shareindia.com/wp-content/uploads/2023/12/What-is-the-Foreign-Exchange-Market-1.webp" alt="Currency Exchange">
+    <h4>Currency Exchange</h4>
+    <p>$1 per unit</p>
+    <button class="buy-btn" onclick="buyProduct('Currency Exchange')">Buy Now</button>
+</div>
+
+<!-- Product 28 - Business Cards -->
+<div class="item">
+    <img src="https://www.printingdynamics.org/wp-content/uploads/2016/07/Vermillion-Silk-Business-Card-Collection.jpg" alt="Business Cards">
+    <h4>Business Cards</h4>
+    <p>$20</p>
+    <button class="buy-btn" onclick="buyProduct('Business Cards')">Buy Now</button>
+</div>
+
+<!-- Product 29 - Notebook -->
+<div class="item">
+    <img src="https://i.redd.it/z0c4n6ljgb151.jpg" alt="Notebook">
+    <h4>Notebook</h4>
+    <p>$5</p>
+    <button class="buy-btn" onclick="buyProduct('Notebook')">Buy Now</button>
+</div>
+
+<!-- Product 30 - Pet -->
+<div class="item">
+    <img src="https://jingdaily.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ff8lauh0h%2Fproduction%2F146bf64e963cb4eb64b709e8a945b2fc0f445d7e-1536x1024.png%3Fq%3D90%26fit%3Dmax%26auto%3Dformat&w=3840&q=90" alt="Pet">
+    <h4>Pet</h4>
+    <p>$3</p>
+    <button class="buy-btn" onclick="buyProduct('Pen Set')">Buy Now</button>
+</div>
+
+<!-- Product 31 - Farming Seeds -->
+<div class="item">
+    <img src="https://www.taropumps.com/media/2366/1_edit.jpg" alt="Farming Seeds">
+    <h4>Farming Seeds</h4>
+    <p>$12</p>
+    <button class="buy-btn" onclick="buyProduct('Farming Seeds')">Buy Now</button>
+</div>
+
+<!-- Product 32 - Tractor Tools -->
+<div class="item">
+    <img src="https://p.turbosquid.com/ts-thumb/kO/i5WVS6/Wi/3dmodels/jpg/1645117601/1920x1080/fit_q87/f49069f8b455bd187d5e31912ef5da6dc0cf1c35/3dmodels.jpg" alt="Tractor Tools">
+    <h4>Tractor Tools</h4>
+    <p>$250</p>
+    <button class="buy-btn" onclick="buyProduct('Tractor Tools')">Buy Now</button>
+</div>
+
+<!-- Product 33 - Guitar -->
+<div class="item">
+    <img src="https://64.media.tumblr.com/9bccba58b95372c685361cbe940e974a/f73f9c547e651f7b-70/s1280x1920/d557b82657d1a6f48a30022b607af3d4d5a456b3.jpg" alt="Guitar">
+    <h4>Acoustic Guitar</h4>
+    <p>$150</p>
+    <button class="buy-btn" onclick="buyProduct('Acoustic Guitar')">Buy Now</button>
+</div>
+
+<!-- Product 34 - Piano Keyboard -->
+<div class="item">
+    <img src="https://s.yimg.com/ny/api/res/1.2/X0SaHeoLuOqpy2ut9j7EDQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTU0MTtjZj13ZWJw/https://media.zenfs.com/en/nerdist_761/2cfef080b5a48bea05254ba048493f85" alt="Keyboard">
+    <h4>Piano Keyboard</h4>
+    <p>$300</p>
+    <button class="buy-btn" onclick="buyProduct('Piano Keyboard')">Buy Now</button>
+</div>
+
+<!-- Product 35 - Library Books -->
+<div class="item">
+    <img src="https://media.istockphoto.com/id/169993375/photo/bookshelf-inside-stockholm-public-library.jpg?s=612x612&w=0&k=20&c=D88pyK6vJMGSvoKjJwrogQK-6DhNclWgNz4Bohvnyeo=" alt="Library Books">
+    <h4>Library Books</h4>
+    <p>$40</p>
+    <button class="buy-btn" onclick="buyProduct('Library Books')">Buy Now</button>
+</div>
+
+<!-- Product 36 - Sports Ball -->
+<div class="item">
+    <img src="https://png.pngtree.com/png-vector/20241119/ourmid/pngtree-a-collection-of-sports-balls-including-soccer-basketball-and-tennis-png-image_14491094.png" alt="Sports Ball">
+    <h4>Sports Ball</h4>
+    <p>$25</p>
+    <button class="buy-btn" onclick="buyProduct('Sports Ball')">Buy Now</button>
+</div>
+
+<!-- Product 37 - Sports Shoes -->
+<div class="item">
+    <img src="https://t4.ftcdn.net/jpg/00/96/91/23/360_F_96912393_et1FLAuWz8H7rU5JU2QvzJ8SHacFHeHm.jpg" alt="Sports Shoes">
+    <h4>Sports Shoes</h4>
+    <p>$70</p>
+    <button class="buy-btn" onclick="buyProduct('Sports Shoes')">Buy Now</button>
+</div>
+
+<!-- Product 38 - Real Estate Plot -->
+<div class="item">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAA5gyOWdbRSN7WDBI8ieRpvlX_2lTb1mKiA&s" alt="Real Estate">
+    <h4>Real Estate Plot</h4>
+    <p>$50.000</p>
+    <button class="buy-btn" onclick="buyProduct('Real Estate Plot')">Buy Now</button>
+</div>
+
+<!-- Product 39 - Office Desk -->
+<div class="item">
+    <img src="https://png.pngtree.com/png-clipart/20241009/original/pngtree-collection-financial-business-banking-png-image_16252018.png" alt="Banking">
+    <h4>Banking</h4>
+    <p>$1080</p>
+    <button class="buy-btn" onclick="buyProduct('Office Desk')">Buy Now</button>
+</div>
+
+<!-- Product 40 - Calculator -->
+<div class="item">
+    <img src="https://www.casio-calculator.com/casio1.jpg" alt="Calculator">
+    <h4>Calculator</h4>
+    <p>$20</p>
+    <button class="buy-btn" onclick="buyProduct('Calculator')">Buy Now</button>
+</div>
+
+<!-- Product 41 - Microscope -->
+<div class="item">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP8hRFfM7SNRmEoD0GcXDC3jE4-fAZwPUBdQ&s" alt="Microscope">
+    <h4>Microscope</h4>
+    <p>$120</p>
+    <button class="buy-btn" onclick="buyProduct('Microscope')">Buy Now</button>
+</div>
+
+<!-- Product 42 - Lab Chemicals -->
+<div class="item">
+    <img src="https://www.westlab.com/media/amasty/blog/cache/L/a/764/386/Laboratory_Chemicals.png" alt="Lab Chemicals">
+    <h4>Lab Chemicals</h4>
+    <p>$50</p>
+    <button class="buy-btn" onclick="buyProduct('Lab Chemicals')">Buy Now</button>
+</div>
+
+<!-- Product 43 - School Backpack -->
+<div class="item">
+    <img src="https://onlinestudentlife.com/wp-content/uploads/2023/05/online-college-school-supplies-1024x538.jpg" alt="School utensils">
+    <h4>School utensils</h4>
+    <p>$305</p>
+    <button class="buy-btn" onclick="buyProduct('School Backpack')">Buy Now</button>
+</div>
+
+<!-- Product 44 - Exercise Mat -->
+<div class="item">
+    <img src="https://www.feiretail.com/media/01_Exercise/30-2310_grp_v1.jpg" alt="Exercise Mat">
+    <h4>Exercise Mat</h4>
+    <p>$25</p>
+    <button class="buy-btn" onclick="buyProduct('Exercise Mat')">Buy Now</button>
+</div>
+
+<!-- Product 45 - Dumbbell Set -->
+<div class="item">
+    <img src="https://m.media-amazon.com/images/I/81svsOJgFLL._AC_SL1500_.jpg" alt="Dumbbell Set">
+    <h4>Dumbbell Set</h4>
+    <p>$60</p>
+    <button class="buy-btn" onclick="buyProduct('Dumbbell Set')">Buy Now</button>
+</div>
+
+<!-- Product 46 - Projector -->
+<div class="item">
+    <img src="https://djd1xqjx2kdnv.cloudfront.net/photos/37/89/500467_141_XXL.jpg" alt="Projector">
+    <h4>Projector</h4>
+    <p>$220</p>
+    <button class="buy-btn" onclick="buyProduct('Projector')">Buy Now</button>
+</div>
+
+<!-- Product 47 - Whiteboard -->
+<div class="item">
+    <img src="https://cdn.vectorstock.com/i/500p/96/52/realistic-whiteboard-collection-vector-38799652.jpg" alt="Whiteboard">
+    <h4>Whiteboard</h4>
+    <p>$800</p>
+    <button class="buy-btn" onclick="buyProduct('Whiteboard')">Buy Now</button>
+</div>
+
+<!-- Product 48 - Study Lamp -->
+<div class="item">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6CupVJohwKSNQ29LOnir16KxZuV1HLrS9CQ&s" alt="Decoration">
+    <h4>Decoration</h4>
+    <p>$300</p>
+    <button class="buy-btn" onclick="buyProduct('Study Lamp')">Buy Now</button>
+</div>
+
+<!-- Product 49 - Sports Helmet -->
+<div class="item">
+    <img src="https://cdn.vectorstock.com/i/1000v/02/47/set-of-sport-wear-collection-vector-20660247.jpg" alt="Sports clothing">
+    <h4>Sports clothing</h4>
+    <p>$40</p>
+    <button class="buy-btn" onclick="buyProduct('Sports Helmet')">Buy Now</button>
+</div>
+
+<!-- Product 50 - Basketball Hoop -->
+<div class="item">
+    <img src="https://images.stockcake.com/public/a/1/0/a10dfb7b-1592-401e-adba-3bec052513fc_large/elegant-suit-collection-stockcake.jpg" alt="Suits">
+    <h4>Suits</h4>
+    <p>$150</p>
+    <button class="buy-btn" onclick="buyProduct('Basketball Hoop')">Buy Now</button>
+</div>
+    
+</div>
+
+<!-- Connect JavaScript -->
+<script src="script.js"></script>
+
+<footer><p style="color: #fff;">&copy; 2026 ABM for DM - Design Premium</p></footer>
+</body>
+</html>
